@@ -28,11 +28,17 @@ body{
 .c-whitesmoke{
     color: whitesmoke;
 }
-.cpu-opinion{
+.cpuDecision{
+  margin :15px;
+}
+.userDecision{
   margin :15px;
 }
 .status{
-  margin :15px;
+  position: absolute;
+margin: 15px auto;
+left: 0;
+right: 0;
   
 }
 .topSide{
@@ -40,13 +46,13 @@ body{
  display: inline-block;
 }
 .score{
- display: inline-block;
+ display: inline-block !important;
 }
 .main{
   text-align: center;
 }
 .screen{
-  width: 400px;
+  width: 600px;
   height: 100px;
   background: transparent ;
   border: 2px solid rgb(88, 94, 109); 

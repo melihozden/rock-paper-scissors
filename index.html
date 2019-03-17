@@ -16,19 +16,23 @@
     </div>
     <div class="main">
         <div class="topSide">
-            <div class="score familyMuli">Your Score</div>
+            <div class="score familyMuli px-24">Your Score<br/><p class="userScore" id="userScore">0</p></div>
             <div class="screen">
-                <div class="cpu-opinion"></div>
-                <div class="status"></div>
+                <div class="userDecision"></div>
+                <div class="status px-32 familyMuli" id="status"></div>
+                <div class="cpuDecision"></div>
             </div>
-            <div class="score familyMuli">CPU Score</div>
+            <div class="score familyMuli px-24">CPU Score<br/><p class="cpuScore" id="cpuScore">0</p></div>
         </div>
             <div class="allItems">
-            <button class="rock px-24 familyMuli" id="rock">Rock</button>
-            <button class="paper px-24 familyMuli" id="paper">Paper</button>
-            <button class="scissors px-24 familyMuli" id="scissors">Scissors</button>
+            <button class="rock px-24 familyMuli" id="rock" onclick="buttonClicked(1)">Rock</button>
+            <button class="paper px-24 familyMuli" id="paper" onclick="buttonClicked(2)">Paper</button>
+            <button class="scissors px-24 familyMuli" id="scissor" onclick="buttonClicked(3)">Scissor</button>
         </div>
     </div>
+
+    <script src="javascript/main.js"></script>
+
 </body>
 
 </html>
