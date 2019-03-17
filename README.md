@@ -1,7 +1,8 @@
 # rock-paper-scissors
 Simple Rock Paper Scissors Game
 
-<code>
-npm install <br/>
+```javascript
+npm install 
 npm start
-</code>
+```
+App is going to start on http://localhost:3000
