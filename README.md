@@ -2,6 +2,6 @@
 Simple Rock Paper Scissors Game
 
 <code>
-npm install <br>
+npm install <br/>
 npm start
 </code>
