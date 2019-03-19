@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="design/design.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <title>Rock Paper Scissors</title>
 </head>
@@ -16,19 +18,24 @@
     </div>
     <div class="main">
         <div class="topSide">
-            <div class="score familyMuli px-24">Your Score<br/><p class="userScore" id="userScore">0</p></div>
+            <div class="score bold familyMuli px-24">Your Score<br />
+                <p class="userScore" id="userScore">0</p>
+            </div>
             <div class="screen">
                 <div class="userDecision"></div>
                 <div class="status px-32 familyMuli" id="status"></div>
                 <div class="cpuDecision"></div>
             </div>
-            <div class="score familyMuli px-24">CPU Score<br/><p class="cpuScore" id="cpuScore">0</p></div>
+            <div class="score bold familyMuli px-24">CPU Score<br />
+                <p class="cpuScore" id="cpuScore">0</p>
+            </div>
         </div>
-            <div class="allItems">
-            <button class="rock px-24 familyMuli" id="rock" onclick="buttonClicked(1)">Rock</button>
-            <button class="paper px-24 familyMuli" id="paper" onclick="buttonClicked(2)">Paper</button>
-            <button class="scissors px-24 familyMuli" id="scissor" onclick="buttonClicked(3)">Scissor</button>
+        <div class="allItems">
+            <button class="rock px-24 familyMuli" id="rock" onclick="buttonClicked(1)"><i class="far fa-hand-rock fa-2x"></i></button></i>
+            <button class="paper px-24 familyMuli" id="paper" onclick="buttonClicked(2)"><i class="far fa-hand-paper fa-2x"></i></button>
+            <button class="scissors px-24 familyMuli" id="scissor" onclick="buttonClicked(3)"><i class="far fa-hand-scissors fa-2x"></i></button>
         </div>
+        <div class="bot-text px-24 familyMuli bold">Select one!</div>
     </div>
 
     <script src="javascript/main.js"></script>
