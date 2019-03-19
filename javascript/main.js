@@ -26,17 +26,21 @@ computerSelect = () => {
 
 
 rockFunction = () => {
-    cpuDecisionVal = Math.floor((Math.random() * 3) + 1)
+    cpuDecisionVal = computerSelect()
     if (cpuDecisionVal == 1) {
         // draw
         console.log(`Draw! Rock: ${userScoreVal} Rock: ${cpuScoreVal}`)
         status.innerHTML = "Draw!"
+        cpuDecision.innerHTML = '<i class="far fa-hand-rock fa-2x"></i>'
+
     }
     else if (cpuDecisionVal == 2) {
         // Paper wins
         cpuScoreVal++;
         console.log(`Paper! Rock: ${userScoreVal} Paper: ${cpuScoreVal}`)
         status.innerHTML = "Computer Wins!"
+        cpuDecision.innerHTML = '<i class="far fa-hand-paper fa-2x"></i>'
+
 
     }
     else {
@@ -44,6 +48,8 @@ rockFunction = () => {
         userScoreVal++
         console.log(`Rock! Rock: ${userScoreVal} Scissor: ${cpuScoreVal}`)
         status.innerHTML = "User Wins!"
+        cpuDecision.innerHTML = '<i class="far fa-hand-scissors fa-2x"></i>'
+
 
     }
 }
@@ -54,11 +60,15 @@ paperFunction = () => {
         userScoreVal++
         console.log(`Paper! Paper: ${userScoreVal} Rock: ${cpuScoreVal}`)
         status.innerHTML = "User Wins!"
+        cpuDecision.innerHTML = '<i class="far fa-hand-rock fa-2x"></i>'
+
     }
     else if (cpuDecisionVal == 2) { // pc --> paper
         // Draw
         console.log(`Draw! Paper: ${userScoreVal} Paper: ${cpuScoreVal}`)
         status.innerHTML = "Draw!"
+        cpuDecision.innerHTML = '<i class="far fa-hand-paper fa-2x"></i>'
+
 
     }
     else {  // pc --> scissor
@@ -66,6 +76,8 @@ paperFunction = () => {
         cpuScoreVal++
         console.log(`Scissor! Paper: ${userScoreVal} Scissor: ${cpuScoreVal}`)
         status.innerHTML = "Computer Wins!"
+        cpuDecision.innerHTML = '<i class="far fa-hand-scissors fa-2x"></i>'
+
 
     }
 
@@ -77,18 +89,24 @@ scissorFunction = () => {
         cpuScoreVal++
         console.log(`Rock! Scissor: ${userScoreVal} Rock: ${cpuScoreVal}`)
         status.innerHTML = "Computer Wins!"
+        cpuDecision.innerHTML = '<i class="far fa-hand-rock fa-2x"></i>'
     }
     else if (cpuDecisionVal == 2) {
         // Scissor wins
         userScoreVal++;
         console.log(`Paper! Scissor: ${userScoreVal} Paper: ${cpuScoreVal}`)
         status.innerHTML = "User Wins!"
+        cpuDecision.innerHTML = '<i class="far fa-hand-paper fa-2x"></i>'
+
+
 
     }
     else {
         // Draw
         console.log(`Draw! Scissor: ${userScoreVal} Scissor: ${cpuScoreVal}`)
         status.innerHTML = "Draw!"
+        cpuDecision.innerHTML = '<i class="far fa-hand-scissors fa-2x"></i>'
+
 
     }
 
@@ -100,18 +118,21 @@ buttonClicked = (x) => {
         console.log(`Rock: ${cpuScoreVal}`)
         cpuScore.innerHTML = cpuScoreVal.toString()
         userScore.innerHTML = userScoreVal.toString()
+        userDecision.innerHTML = '<i class="far fa-hand-rock fa-2x"></i>'
     }
     else if (x == 2) {
         paperFunction()
         console.log(`Paper: ${cpuScoreVal}`)
         cpuScore.innerHTML = cpuScoreVal.toString()
         userScore.innerHTML = userScoreVal.toString()
+        userDecision.innerHTML = '<i class="far fa-hand-paper fa-2x"></i>'
     }
     else {
         scissorFunction()
         console.log(`Scissor: ${cpuScoreVal}`)
         cpuScore.innerHTML = cpuScoreVal.toString()
         userScore.innerHTML = userScoreVal.toString()
+        userDecision.innerHTML = '<i class="far fa-hand-scissors fa-2x"></i>'
     }
 
 
